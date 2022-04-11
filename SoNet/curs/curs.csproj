@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB2E1008-289E-4BCD-8701-431CDCF10C57}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>curs</RootNamespace>
+    <AssemblyName>curs</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.WPF, Version=4.7.0.37774, Culture=neutral, PublicKeyToken=0758b07a11a4f466, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.WPF.4.7.0.9\lib\net40\FontAwesome.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=2.0.0.2422, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.2.0.0\lib\net452\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=4.0.0.2422, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.4.0.0\lib\net452\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.2\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.2\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.2\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.2\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.2\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Connected Services\ServiceChat\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\Commands\Base\BaseForBaseCommand.cs" />
+    <Compile Include="Infrastructure\Commands\Base\DelegateCommand.cs" />
+    <Compile Include="Infrastructure\Navigation\INavigationAware.cs" />
+    <Compile Include="Infrastructure\Navigation\INavigationManager.cs" />
+    <Compile Include="Infrastructure\Navigation\NavigationKeys.cs" />
+    <Compile Include="Infrastructure\Navigation\NavigationManager.cs" />
+    <Compile Include="Infrastructure\Password\PasswordBoxAssistant.cs" />
+    <Compile Include="ViewModels\Base\BaseViewModel.cs" />
+    <Compile Include="ViewModels\LoginRegistration\ContextLogRegViewModel.cs" />
+    <Compile Include="ViewModels\LoginRegistration\ErrorMessageViewModel.cs" />
+    <Compile Include="ViewModels\LoginRegistration\RegistrationPictureViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\AdminContextRightInfoViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\ContextRightInfoViewModel.cs" />
+    <Compile Include="ViewModels\LoginRegistration\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MainElements\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\LoginRegistration\RegisterEndViewModel.cs" />
+    <Compile Include="ViewModels\LoginRegistration\RegisterViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\DataBaseViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\FriendsViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\HelpingUserControlsVM\AddChangePostViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\HelpingUserControlsVM\AddPostViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\HelpingUserControlsVM\CommentPostViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\HelpingUserControlsVM\DeletePostViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\HelpingUserControlsVM\ExitViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\HelpingUserControlsVM\SearchResultsViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\HelpingUserControlsVM\StrangeProfileViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\MessageViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\MyFilesViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\ProfileViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\SendMessageViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\SettingsViewModel.cs" />
+    <Compile Include="ViewModels\RightInformation\StrangeFilesViewModel.cs" />
+    <Compile Include="View\LoginRegistrationView\ContentForLoginRegistration.xaml.cs">
+      <DependentUpon>ContentForLoginRegistration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginRegistrationView\ErrorMessage.xaml.cs">
+      <DependentUpon>ErrorMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginRegistrationView\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginRegistrationView\RegistrationAddPicture.xaml.cs">
+      <DependentUpon>RegistrationAddPicture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginRegistrationView\RegistrationEndView.xaml.cs">
+      <DependentUpon>RegistrationEndView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginRegistrationView\RegistrationView.xaml.cs">
+      <DependentUpon>RegistrationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainElementView\MainWindowView.xaml.cs">
+      <DependentUpon>MainWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\MainElements\IMainUserControl.cs" />
+    <Compile Include="View\RightInformationView\Admin\AdminContentForRightInfo.xaml.cs">
+      <DependentUpon>AdminContentForRightInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\Admin\AdminKeys.cs" />
+    <Compile Include="View\RightInformationView\Admin\DataBaseView.xaml.cs">
+      <DependentUpon>DataBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\ContentForRightInfo.xaml.cs">
+      <DependentUpon>ContentForRightInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\FriendsView.xaml.cs">
+      <DependentUpon>FriendsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\HelpingUserControls\AddChangePostView.xaml.cs">
+      <DependentUpon>AddChangePostView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\HelpingUserControls\AddPostView.xaml.cs">
+      <DependentUpon>AddPostView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\HelpingUserControls\CommentPostView.xaml.cs">
+      <DependentUpon>CommentPostView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\HelpingUserControls\DeletePostVIew.xaml.cs">
+      <DependentUpon>DeletePostVIew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\HelpingUserControls\ExitView.xaml.cs">
+      <DependentUpon>ExitView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\HelpingUserControls\SearchResultsView.xaml.cs">
+      <DependentUpon>SearchResultsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\HelpingUserControls\StrangeProfileView.xaml.cs">
+      <DependentUpon>StrangeProfileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\MessageView.xaml.cs">
+      <DependentUpon>MessageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\MyFilesView.xaml.cs">
+      <DependentUpon>MyFilesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\ProfileView.xaml.cs">
+      <DependentUpon>ProfileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RightInformationView\StrangeFilesView.xaml.cs">
+      <DependentUpon>StrangeFilesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SendMessage\SendMessageView.xaml.cs">
+      <DependentUpon>SendMessageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings\SettingsView.xaml.cs">
+      <DependentUpon>SettingsView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\Languages\Russian.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LoginRegistrationView\ContentForLoginRegistration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LoginRegistrationView\ErrorMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LoginRegistrationView\LoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LoginRegistrationView\RegistrationAddPicture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LoginRegistrationView\RegistrationEndView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LoginRegistrationView\RegistrationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainElementView\MainWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\RightInformationView\Admin\AdminContentForRightInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\Admin\DataBaseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\ContentForRightInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\FriendsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\HelpingUserControls\AddChangePostView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\HelpingUserControls\AddPostView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\HelpingUserControls\CommentPostView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\HelpingUserControls\DeletePostVIew.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\HelpingUserControls\ExitView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\HelpingUserControls\SearchResultsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\HelpingUserControls\StrangeProfileView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\RightInformationView\MessageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\MyFilesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\ProfileView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RightInformationView\StrangeFilesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SendMessage\SendMessageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Settings\SettingsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Themes\Standard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Connected Services\ServiceChat\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceChat\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceChat\ServiceChat.wsdl" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\LoginRegistrationView\Символьный.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Смешаный.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\RightInformationView\СмешаныйБелый.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\СимвольныйБелый.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\MainElementView\Символьный.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\RightInformationView\volcanic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Settings\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatabaseClasses\DatabaseClasses.csproj">
+      <Project>{9797e68c-412e-44e4-b84b-e8f9e3b7bbd8}</Project>
+      <Name>DatabaseClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileManagement\FileManagement.csproj">
+      <Project>{bf272e28-aaf1-4f7d-bb71-bc0fcbcbbfb4}</Project>
+      <Name>FileManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{dc7c1582-5275-41f2-9e4f-8644f42abe1e}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceChat\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceChat\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceChat\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceChat\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceChat\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

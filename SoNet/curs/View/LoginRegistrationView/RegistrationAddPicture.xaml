@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="curs.View.LoginRegistrationView.RegistrationAddPicture"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            xmlns:local="clr-namespace:curs"
+            mc:Ignorable="d" 
+            d:DesignHeight="886" d:DesignWidth="908">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" BorderBrush="Black" BorderThickness="1" Margin="210,5,210,10">
+            <Grid Margin="0,0,0,-1" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="307*" ></RowDefinition>
+                    <RowDefinition Height="416*" ></RowDefinition>
+                    <RowDefinition Height="71*" ></RowDefinition>
+                    <RowDefinition Height="76*" ></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="Символьный.png"  Grid.Row="0" Margin="0,35,0,65"></Image>
+
+                <Button Grid.Row="1" Margin="97,10,97,338" Height="Auto" Command="{Binding GoChooseImage}">Добавить картинку</Button>
+                <Image Grid.Row="1" Margin="57,80,57,30" Source="{Binding ImageName}"></Image>
+
+                <Button Grid.Row="2" Height="Auto" Margin="57,0,57,19" FontSize="20" Command="{Binding CreateNewAccount}">Регистрация</Button>
+
+                <Button Grid.Row="3" Height="Auto" Margin="57,0,57,27" FontSize="20" Command="{Binding GoToLogin }">Вход</Button>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

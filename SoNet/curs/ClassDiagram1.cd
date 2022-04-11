@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="curs.App" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAIAAEAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.ServiceChat.ServiceChatClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAAAAAAAAQAAAAgIAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\ServiceChat\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.Infrastructure.Commands.Base.BaseForBaseCommand" Collapsed="true">
+    <Position X="26.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Commands\Base\BaseForBaseCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.Infrastructure.Commands.Base.DelegateCommand" Collapsed="true">
+    <Position X="26.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Commands\Base\DelegateCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="curs.Infrastructure.Navigation.NavigationKeys" Collapsed="true">
+    <Position X="38.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAAAAAIAAAABAAAEQBQAEIAABAhEAIAAAAAkBgChA=</HashCode>
+      <FileName>Infrastructure\Navigation\NavigationKeys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="curs.Infrastructure.Navigation.NavigationManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAEMEAABAIAACAIAIAAAEABCBAAgAARAABCAAQ=</HashCode>
+      <FileName>Infrastructure\Navigation\NavigationManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.Infrastructure.Password.PasswordBoxAssistant" Collapsed="true">
+    <Position X="31.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBABAAAAAAAAAAEAAAAAAACoABAgAAAAAAAAAICAAAg=</HashCode>
+      <FileName>Infrastructure\Password\PasswordBoxAssistant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="curs.Properties.Resources" Collapsed="true">
+    <Position X="29.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="curs.Properties.Settings" Collapsed="true">
+    <Position X="36.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="curs.View.LoginRegistrationView.ContentForLoginRegistration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\LoginRegistrationView\ContentForLoginRegistration.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.LoginRegistrationView.ErrorMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\LoginRegistrationView\ErrorMessage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.LoginRegistrationView.LoginView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\LoginRegistrationView\LoginView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.LoginRegistrationView.RegistrationAddPicture" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\LoginRegistrationView\RegistrationAddPicture.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.LoginRegistrationView.RegistrationEndView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\LoginRegistrationView\RegistrationEndView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.LoginRegistrationView.RegistrationView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\LoginRegistrationView\RegistrationView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.MainElementView.MainWindowView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\MainElementView\MainWindowView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.Admin.AdminContentForRightInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\Admin\AdminContentForRightInfo.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.Admin.AdminKeys" Collapsed="true">
+    <Position X="34.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\Admin\AdminKeys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="curs.View.RightInformationView.Admin.DataBaseView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\Admin\DataBaseView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.ContentForRightInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\ContentForRightInfo.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.FriendsView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\FriendsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.MessageView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\MessageView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.MyFilesView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\MyFilesView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.ProfileView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\ProfileView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.StrangeFilesView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\StrangeFilesView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.HelpingUserControls.AddChangePostView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\HelpingUserControls\AddChangePostView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.HelpingUserControls.AddPostView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\HelpingUserControls\AddPostView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.HelpingUserControls.CommentPostView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\HelpingUserControls\CommentPostView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.HelpingUserControls.DeletePostVIew" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\HelpingUserControls\DeletePostVIew.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.HelpingUserControls.ExitView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\HelpingUserControls\ExitView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.HelpingUserControls.SearchResultsView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\HelpingUserControls\SearchResultsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.RightInformationView.HelpingUserControls.StrangeProfileView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RightInformationView\HelpingUserControls\StrangeProfileView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.SendMessage.SendMessageView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\SendMessage\SendMessageView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.View.Settings.SettingsView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Settings\SettingsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="curs.ViewModels.Base.BaseViewModel" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Base\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.LoginRegistration.ContextLogRegViewModel" Collapsed="true">
+    <Position X="23.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAgAAAAAAAAAACAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>ViewModels\LoginRegistration\ContextLogRegViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.LoginRegistration.ErrorMessageViewModel" Collapsed="true">
+    <Position X="30" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBAAAAAAAAAgAAAAABAAACCAAAACAAAAAIACAQAAAE=</HashCode>
+      <FileName>ViewModels\LoginRegistration\ErrorMessageViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.LoginRegistration.LoginViewModel" Collapsed="true">
+    <Position X="36.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAAAAgBgQAACQhAAAAiAAAAQAECABIACgQAAIE=</HashCode>
+      <FileName>ViewModels\LoginRegistration\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.LoginRegistration.RegisterEndViewModel" Collapsed="true">
+    <Position X="43.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABBAQAAAAAUAhQAACAwQAAiCAAIICAECAAAACAAEAAA=</HashCode>
+      <FileName>ViewModels\LoginRegistration\RegisterEndViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.LoginRegistration.RegisterViewModel" Collapsed="true">
+    <Position X="50.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABBAAAAAAABgQAACwgAAASCAAAECAECAAAYCgAAAIg=</HashCode>
+      <FileName>ViewModels\LoginRegistration\RegisterViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.LoginRegistration.RegistrationPictureViewModel" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AERAAAAAAAACgAAAAMAAAACmAAAIDAAAIAAACAQAIQA=</HashCode>
+      <FileName>ViewModels\LoginRegistration\RegistrationPictureViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.MainElements.MainWindowViewModel" Collapsed="true">
+    <Position X="14.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MainElements\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.AdminContextRightInfoViewModel" Collapsed="true">
+    <Position X="18.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAQAAMAAAgIAACAAAABACIAAAAAAAAAACCAAAAAA=</HashCode>
+      <FileName>ViewModels\RightInformation\AdminContextRightInfoViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.ContextRightInfoViewModel" Collapsed="true">
+    <Position X="25.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAQAAYAJCgYAACAjgAAAKICAAAUEABAQCCEAABkg=</HashCode>
+      <FileName>ViewModels\RightInformation\ContextRightInfoViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.DataBaseViewModel" Collapsed="true">
+    <Position X="32.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YQAAADUBMAEAoVFAyAgAAgEKAAAAAQEAAAAgCEAAAAg=</HashCode>
+      <FileName>ViewModels\RightInformation\DataBaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.FriendsViewModel" Collapsed="true">
+    <Position X="39" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQCIAAAAMA0AoxhASIiCAAUCiAAACSsAANAACEAAICA=</HashCode>
+      <FileName>ViewModels\RightInformation\FriendsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.MessageViewModel" Collapsed="true">
+    <Position X="45.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RQAACQQAMAUAgABAQICAAAUCgAAAAQAAAAQCCEAAIAA=</HashCode>
+      <FileName>ViewModels\RightInformation\MessageViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.MyFilesViewModel" Collapsed="true">
+    <Position X="52.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAEIAgCIAAEgIAAIAAgCAACAAAIAQAFwAAAiEAAgIA=</HashCode>
+      <FileName>ViewModels\RightInformation\MyFilesViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.ProfileViewModel" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAAJAYAYChSAABI2ICAyKAAIMQAACBgQEKgAAIgg=</HashCode>
+      <FileName>ViewModels\RightInformation\ProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.SendMessageViewModel" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAMAAAgQAQCIkAABQCAAAEAEEBAAwADQAIIAg=</HashCode>
+      <FileName>ViewModels\RightInformation\SendMessageViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.SettingsViewModel" Collapsed="true">
+    <Position X="16.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAQAAAIAAAhQAACJwAAAwGAAIMBAECAAAICAAAIAg=</HashCode>
+      <FileName>ViewModels\RightInformation\SettingsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.StrangeFilesViewModel" Collapsed="true">
+    <Position X="21" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAIAhAIAAAgIAAIAAgAgACAAAIAQAIgAAAiEAAgIA=</HashCode>
+      <FileName>ViewModels\RightInformation\StrangeFilesViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.HelpingUserControlsVM.AddChangePostViewModel" Collapsed="true">
+    <Position X="27.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAIAAKgQAACAggAAACAIQgAQEAAAAACAhAAAg=</HashCode>
+      <FileName>ViewModels\RightInformation\HelpingUserControlsVM\AddChangePostViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.HelpingUserControlsVM.AddPostViewModel" Collapsed="true">
+    <Position X="34.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAJgQAACAggAAACAIQAAQEAAAAACAhAAAg=</HashCode>
+      <FileName>ViewModels\RightInformation\HelpingUserControlsVM\AddPostViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.HelpingUserControlsVM.CommentPostViewModel" Collapsed="true">
+    <Position X="41.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgRUAAJAAAgQRACImgAAQCQAAEAUEAAAAACAgAIAw=</HashCode>
+      <FileName>ViewModels\RightInformation\HelpingUserControlsVM\CommentPostViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.HelpingUserControlsVM.DeletePostViewModel" Collapsed="true">
+    <Position X="48" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEIAAQgAAAAAAgAAACACAAAQAAAAAAmAAAgBg=</HashCode>
+      <FileName>ViewModels\RightInformation\HelpingUserControlsVM\DeletePostViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.HelpingUserControlsVM.ExitViewModel" Collapsed="true">
+    <Position X="54.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAIAAAgAAAAAAgAACiAAAACQAAAAAACAAAAAg=</HashCode>
+      <FileName>ViewModels\RightInformation\HelpingUserControlsVM\ExitViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.HelpingUserControlsVM.SearchResultsViewModel" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAIAAE4gAAAIAAAAACAAAEAAIAAIAACACAIAA=</HashCode>
+      <FileName>ViewModels\RightInformation\HelpingUserControlsVM\SearchResultsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="curs.ViewModels.RightInformation.HelpingUserControlsVM.StrangeProfileViewModel" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgIQAIAIQgQhQAABI0IAAyCQAIMAAACAhAEKBAAIAg=</HashCode>
+      <FileName>ViewModels\RightInformation\HelpingUserControlsVM\StrangeProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="curs.ServiceChat.IServiceChat" Collapsed="true">
+    <Position X="26.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAAAAAAAAQAAAAgIAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\ServiceChat\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="curs.ServiceChat.IServiceChatCallback" Collapsed="true">
+    <Position X="34.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\ServiceChat\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="curs.ServiceChat.IServiceChatChannel" Collapsed="true">
+    <Position X="26.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\ServiceChat\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="curs.Infrastructure.Navigation.INavigationAware" Collapsed="true">
+    <Position X="31.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Infrastructure\Navigation\INavigationAware.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="curs.Infrastructure.Navigation.INavigationManager" Collapsed="true">
+    <Position X="33" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAACAAAAAAAAABAAAAAAAQAAACAAA=</HashCode>
+      <FileName>Infrastructure\Navigation\INavigationManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="curs.View.MainElements.IMainUserControl" Collapsed="true">
+    <Position X="29.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MainElements\IMainUserControl.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

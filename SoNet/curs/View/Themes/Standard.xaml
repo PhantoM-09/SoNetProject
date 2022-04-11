@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="LeftGrid">
+        <Setter Property="Grid.Background" Value="#11253A"></Setter>
+    </Style>
+    <Style x:Key="TopGrid">
+        <Setter Property="Grid.Background" Value="#FF3D6AA6"></Setter>
+    </Style>
+    <Style TargetType="Menu">
+        <Setter Property="Background" Value="#11253A"></Setter>
+    </Style>
+    <Style x:Key="TopMenu">
+        <Setter Property="Menu.Background" Value="#FF3D6AA6"></Setter>
+    </Style>
+
+    <!--Top Grid all usercontrols-->
+    <Style x:Key="Grids">
+        <Setter Property="Grid.Background" Value="#FF4F7AA6"></Setter>
+    </Style>
+</ResourceDictionary>

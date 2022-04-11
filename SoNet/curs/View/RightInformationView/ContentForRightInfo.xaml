@@ -1,0 +1,128 @@
+﻿<UserControl x:Class="curs.View.RightInformationView.ContentForRightInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:curs.View.RightInformationView"
+             xmlns:font="http://schemas.fontawesome.io/icons/"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:tool="http://schemas.xceed.com/wpf/xaml/toolkit" xmlns:settings="clr-namespace:curs.View.Settings" xmlns:helpingusercontrols="clr-namespace:curs.View.RightInformationView.HelpingUserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <UserControl.Resources>
+        <ResourceDictionary Source="/curs;component/View/Themes/Standard.xaml"/>
+    </UserControl.Resources>
+    <Grid x:Name="MainGrid">
+        <Grid.Resources>
+            <ResourceDictionary Source="/curs;component/View/Languages/Russian.xaml"></ResourceDictionary>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Style="{DynamicResource LeftGrid}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="83*"></RowDefinition>
+                <RowDefinition Height="97*"></RowDefinition>
+                <RowDefinition Height="70*"></RowDefinition>
+                <RowDefinition Height="20*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="СмешаныйБелый.png" Margin="15,10,15,115"></Image>
+            <Menu Grid.Row="1"  VerticalAlignment="Stretch">
+                <Menu.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel />
+                    </ItemsPanelTemplate>
+                </Menu.ItemsPanel>
+                <MenuItem  Height="90" FontSize="30" Foreground="White" Command="{Binding GoToProfile}">
+                    <MenuItem.Icon>
+                        <font:ImageAwesome Icon="User" Foreground="White" Margin="6,-7,-21,-4"/>
+                    </MenuItem.Icon>
+                    <MenuItem.Header>
+                        <TextBlock Margin="10,0,-209,0" Text="{DynamicResource MyPage}"></TextBlock>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem  Height="90"  FontSize="30" Foreground="White" Command="{Binding GoToFriends}">
+                    <MenuItem.Icon>
+                        <font:ImageAwesome Icon="Users" Foreground="White" Margin="6,-7,-21,-7"/>
+                    </MenuItem.Icon>
+                    <MenuItem.Header>
+                        <TextBlock Margin="10,0,-209,0" Text="{DynamicResource Friend}"></TextBlock>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem  Height="90"  FontSize="30" Foreground="White" Command="{Binding GoToMessage}">
+                    <MenuItem.Icon>
+                        <font:ImageAwesome Icon="Envelope" Foreground="White" Margin="6,-7,-21,-7"/>
+                    </MenuItem.Icon>
+                    <MenuItem.Header>
+                        <TextBlock Margin="10,0,-209,0" Text="{DynamicResource Message}"></TextBlock>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem  Height="90"  FontSize="30" Foreground="White" Command="{Binding GoToMyFiles}">
+                    <MenuItem.Icon>
+                        <font:ImageAwesome Icon="File" Foreground="White" Margin="6,-7,-21,-7"/>
+                    </MenuItem.Icon>
+                    <MenuItem.Header>
+                        <TextBlock Margin="10,0,-209,0" Text="{DynamicResource Files}"></TextBlock>
+                    </MenuItem.Header>
+                </MenuItem>
+            </Menu>
+            <Menu Grid.Row="3" VerticalAlignment="Stretch">
+                <Menu.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel />
+                    </ItemsPanelTemplate>
+                </Menu.ItemsPanel>
+                <MenuItem  Height="80" FontSize="30" Foreground="White" Command="{Binding GoToExit}">
+                    <MenuItem.Icon>
+                        <font:ImageAwesome Icon="SignOut" Foreground="White" Margin="5,-5,-19,-4" RenderTransformOrigin="0.5,0.5" >
+                            <font:ImageAwesome.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleX="-1"/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </font:ImageAwesome.RenderTransform>
+                        </font:ImageAwesome>
+                    </MenuItem.Icon>
+                    <MenuItem.Header>
+                        <TextBlock Margin="10,0,-209,0" Text="{DynamicResource Exit}"></TextBlock>
+                    </MenuItem.Header>
+                </MenuItem>
+            </Menu>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="11*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Style="{DynamicResource TopGrid}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="184*"></ColumnDefinition>
+                    <ColumnDefinition Width="111*"></ColumnDefinition>
+                    <ColumnDefinition Width="25*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Column="1" Margin="0,20,175,20" FontSize="30" BorderBrush="White" Background="White" MaxLength="20" BorderThickness="1" materialDesign:HintAssist.Hint ="{DynamicResource Search}" Text="{Binding SearchRequest, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"></TextBox>
+                <Button Grid.Column="1" Margin="380,20,85,20" Height="Auto" Background="#FF3D6AA6" BorderBrush="#FF3D6AA6" Command="{Binding GoToSearchResults}">
+                    <font:ImageAwesome Icon="Search" Foreground="White"></font:ImageAwesome>
+                </Button>
+
+                <Menu Grid.Column="2" Style="{DynamicResource TopMenu}">
+                    <MenuItem  Height="88" FontSize="30" Foreground="Black" Width="120" Command="{Binding GoToSettings}">
+                        <MenuItem.Icon>
+                            <font:ImageAwesome Icon="gear" Foreground="White" Margin="20,-12,-59,-12"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </Menu>
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <ContentControl x:Name="RightInformationContent" x:FieldModifier="public">
+                </ContentControl>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="curs.View.RightInformationView.MyFilesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:curs.View.RightInformationView"
+             xmlns:tool="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:font="http://schemas.fontawesome.io/icons/"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="990" d:DesignWidth="1600" x:Name="rooT">
+    <UserControl.Resources>
+        <ResourceDictionary Source="/curs;component/View/Themes/Standard.xaml"></ResourceDictionary>
+    </UserControl.Resources>
+    <Grid  x:Name="MainGrid">
+        <Grid.Resources>
+            <ResourceDictionary Source="/curs;component/View/Languages/Russian.xaml"></ResourceDictionary>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="79*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"  Style="{DynamicResource Grids}" >
+            <TextBlock FontSize="40" Margin="10,20,10,0" Foreground="White" Text="{DynamicResource Files}"></TextBlock>
+        </Grid>
+
+        <Grid Grid.Row="1" Background="#FFF1F1F1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="151*"></ColumnDefinition>
+                <ColumnDefinition Width="9*"/>
+            </Grid.ColumnDefinitions>
+            <Border BorderBrush="Black" BorderThickness="1" Grid.Column="0" Grid.ColumnSpan="2"></Border>
+            <TextBox Margin="10,20,390,20" FontSize="25" BorderBrush="White" BorderThickness="1" Background="White" materialDesign:HintAssist.Hint="{DynamicResource Search}" Text="{Binding SearchRequest, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0"></TextBox>
+            <Button Margin="1120,20,309,20" Height="Auto" Background="#FF3D6AA6" BorderBrush="#FF3D6AA6" Command="{Binding GoSearchFiles}">
+                <font:ImageAwesome Icon="Search" Foreground="White"></font:ImageAwesome>
+            </Button>
+
+            <Button Margin="1221,20,211,20" Height="Auto" Background="#FF3D6AA6" BorderBrush="#FF3D6AA6" Command="{Binding GoCancelSearchFiles}">
+                <font:ImageAwesome Icon="Close" Foreground="White"></font:ImageAwesome>
+            </Button>
+            <Button Margin="1340,20,40,20" Grid.ColumnSpan="2" FontSize="20" Height="Auto" Background="#FF3D6AA6" BorderBrush="#FF3D6AA6" Content="{DynamicResource Add}" Command="{Binding GoAddFiles}"></Button>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <ListBox Margin="0,0,0,0" HorizontalContentAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Auto" ItemsSource="{Binding  Files, UpdateSourceTrigger=PropertyChanged}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Height="72">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="17*"></ColumnDefinition>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border BorderBrush="#FF767676" BorderThickness="1" Grid.ColumnSpan="3" Margin="0,71,0,0"></Border>
+                            <TextBlock FontSize="20" Margin="10,20,10,20" Grid.Column="0" Text="{Binding FileName}"></TextBlock>
+
+                            <Button Grid.Column="1" Margin="0,20,20,20" Height="Auto"  Command="{Binding ElementName=rooT, Path=DataContext. GoDownloadFile}" CommandParameter="{Binding}">
+                                <font:ImageAwesome Icon="Download" Foreground="White"></font:ImageAwesome>
+                            </Button>
+
+                            <Button Grid.Column="2" Margin="0,20,20,20" Height="Auto"  Command="{Binding ElementName=rooT, Path=DataContext.GoDeleteFile}" CommandParameter="{Binding}">
+                                <font:ImageAwesome Icon="Trash" Foreground="White" ></font:ImageAwesome>
+                            </Button>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </Grid>
+</UserControl>

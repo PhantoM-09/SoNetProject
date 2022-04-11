@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="curs.View.LoginRegistrationView.RegistrationView"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            xmlns:local="clr-namespace:curs"
+            xmlns:vm="clr-namespace:curs.ViewModels.LoginRegistration"
+             xmlns:ff="clr-namespace:curs.Infrastructure.Password"
+            mc:Ignorable="d" 
+            d:DesignHeight="886" d:DesignWidth="908">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="210,5,210,10">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="280*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="Символьный.png"  Grid.Row="0" Margin="0,50"></Image>
+                <TextBox Grid.Row="1" Margin="50,20,50,15" FontSize="20" BorderBrush="Black" materialDesign:HintAssist.Hint="Фамилия" materialDesign:HintAssist.IsFloating="True">
+                    <TextBox.Text>
+                        <Binding Path="LastName" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <DataErrorValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBox Grid.Row="2" Margin="50,20,50,15" FontSize="20" BorderBrush="Black" materialDesign:HintAssist.Hint="Имя" materialDesign:HintAssist.IsFloating="True">
+                    <TextBox.Text>
+                        <Binding Path="Name" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <DataErrorValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBox Grid.Row="3" Margin="50,20,50,15" FontSize="20" BorderBrush="Black" materialDesign:HintAssist.Hint="E-mail" materialDesign:HintAssist.IsFloating="True">
+                    <TextBox.Text>
+                        <Binding Path="E_mail" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <DataErrorValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <PasswordBox Grid.Row="4" Margin="50,20,50,15" FontSize="20" BorderBrush="Black" 
+                                     materialDesign:HintAssist.Hint="Пароль"
+                                     materialDesign:HintAssist.IsFloating="True" x:Name="PasswordBox"
+                                     ff:PasswordBoxAssistant.BindPassword="true"  ff:PasswordBoxAssistant.BoundPassword="{Binding Path=Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}">
+                </PasswordBox>
+                <Button Grid.Row="5" Margin="50,50,50,0"  FontSize="20" Height="Auto" Command="{Binding  GoInputOtherInfo}">Далее</Button>
+                <Button Grid.Row="6" Margin="50,10,50,45"  FontSize="20" Height="Auto" Command="{Binding GoToLogin}">Войти</Button>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

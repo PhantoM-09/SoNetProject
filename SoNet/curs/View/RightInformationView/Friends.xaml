@@ -1,0 +1,24 @@
+﻿<Window x:Class="curs.View.RightInformationView.Friends"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:curs.View.RightInformationView"
+        mc:Ignorable="d"
+        Title="Friends" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160*"></RowDefinition>
+            <RowDefinition Height="259*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35*"></ColumnDefinition>
+                <ColumnDefinition Width="64*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="КартинкаПрофиля.jpg" Margin="81,10,5,10"></Image>
+            <TextBlock Grid.Column="1" Margin="0,10,0,114" FontSize="30">LastName Name</TextBlock>
+            <TextBlock Grid.Column="1" Margin="0,46,0,80" FontSize="25" Foreground="#FF767676">Мужской, Беларусь</TextBlock>
+        </Grid>
+    </Grid>
+</Window>

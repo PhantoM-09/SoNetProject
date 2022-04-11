@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="curs.View.RightInformationView.HelpingUserControls.ExitView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:curs.View.RightInformationView.HelpingUserControls"
+             xmlns:font="http://schemas.fontawesome.io/icons/"
+             mc:Ignorable="d" 
+              d:DesignHeight="990" d:DesignWidth="1600">
+    <Grid  x:Name="MainGrid">
+        <Grid.Resources>
+            <ResourceDictionary Source="/curs;component/View/Languages/Russian.xaml"></ResourceDictionary>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"></RowDefinition>
+            <RowDefinition Height="61*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" FontSize="40" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="53" Margin="480,0" Width="640" Text="{DynamicResource QuestionExit}"></TextBlock>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" FontSize="20"  Height="Auto" Margin="640,40,10,500" Command="{Binding GoToLogin}" Content="{DynamicResource Yes}"></Button>
+            <Button Grid.Column="1" FontSize="20"  Height="Auto" Margin="10,40,640,500" Command="{Binding GoToProfile}" Content="{DynamicResource No}"></Button>
+        </Grid>
+    </Grid>
+</UserControl>

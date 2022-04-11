@@ -1,0 +1,117 @@
+﻿<UserControl x:Class="curs.View.Settings.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:curs.View.Settings"
+             xmlns:tool="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:font="http://schemas.fontawesome.io/icons/"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="990" d:DesignWidth="1600">
+    <UserControl.Resources>
+        <ResourceDictionary Source="/curs;component/View/Themes/Standard.xaml"></ResourceDictionary>
+    </UserControl.Resources>
+    <Grid x:Name="MainGrid">
+        <Grid.Resources>
+            <ResourceDictionary Source="/curs;component/View/Languages/Russian.xaml"></ResourceDictionary>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <font:ImageAwesome Icon="gears" Foreground="Black" Grid.ColumnSpan="2" Opacity="0.1" Margin="30,30,30,30">
+            <font:ImageAwesome.Effect>
+                <BlurEffect/>
+            </font:ImageAwesome.Effect>
+        </font:ImageAwesome>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0"  Style="{DynamicResource Grids}" Height="90" VerticalAlignment="Bottom" >
+                <TextBlock FontSize="40" Margin="10,0,-799,0" Foreground="White" Text="{DynamicResource EditProfile}"></TextBlock>
+            </Grid>
+           
+
+            <Image Grid.Row="1" Height="300" Margin="10,30,480,30" Source="{Binding ImageName, UpdateSourceTrigger=PropertyChanged}"></Image>
+
+            <TextBlock Grid.Row="2" FontSize="30" Margin="10,25,660,25" VerticalAlignment="Center" Text="{DynamicResource LastName}"></TextBlock>
+            <TextBox Grid.Row="2" FontSize="30" Margin="240,20,280,20" materialDesign:HintAssist.Hint="{DynamicResource EnterText}" BorderThickness="1" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"></TextBox>
+
+            <TextBlock Grid.Row="3" FontSize="30" Margin="10,25,725,25" VerticalAlignment="Center" Text="{DynamicResource Name}"></TextBlock>
+            <TextBox Grid.Row="3" FontSize="30" Margin="240,21,280,19" materialDesign:HintAssist.Hint="{DynamicResource EnterText}" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" BorderThickness="1"></TextBox>
+
+            <Grid  Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="13*"></ColumnDefinition>
+                    <ColumnDefinition Width="147*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" FontSize="30" Margin="10,20,730,10" Grid.ColumnSpan="2" Text="{DynamicResource Sex}"></TextBlock>
+                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="175,19,280,19"></Border>
+                <ComboBox Height="50"  Grid.Column="1" Margin="176,20,281,20" IsReadOnly="True" FontSize="30" Background="White" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="{Binding Sex, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}">
+                    <ComboBoxItem IsSelected="True">
+                        <TextBlock FontSize="20" Text="{DynamicResource Male}"></TextBlock>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock FontSize="20" Text="{DynamicResource Female}"></TextBlock>
+                    </ComboBoxItem>
+                </ComboBox>
+            </Grid>
+
+            <TextBlock Grid.Row="5" FontSize="30" Margin="10,20,570,10" Text="{DynamicResource BirthDay}"></TextBlock>
+            <TextBox Grid.Row="5" FontSize="30" BorderThickness="1" BorderBrush="Black" Margin="240,15,280,20" Height="55" materialDesign:HintAssist.Hint="{DynamicResource EnterText}" Text="{Binding BirthDay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"></TextBox>
+            <Border  Grid.Row="5"  BorderThickness="5" BorderBrush="Black" Margin="240,63,280,20"></Border>
+
+            <TextBlock Grid.Row="6" FontSize="30" Margin="10,20,685,10" Text="{DynamicResource Country}"></TextBlock>
+            <ComboBox Height="50" IsReadOnly="True" Grid.Row="6" Margin="241,20,281,20" FontSize="20" Background="White" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="{Binding Country, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}">
+                <ComboBoxItem IsSelected="True" >
+                    <TextBlock FontSize="20" Text="{DynamicResource Country1}"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem >
+                    <TextBlock FontSize="20" Text="{DynamicResource Country2}"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem >
+                    <TextBlock FontSize="20" Text="{DynamicResource Country3}"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem >
+                    <TextBlock FontSize="20" Text="{DynamicResource Country4}"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem >
+                    <TextBlock FontSize="20" Text="{DynamicResource Country5}"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem >
+                    <TextBlock FontSize="20" Text="{DynamicResource Country6}"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock FontSize="20" Text="{DynamicResource Country7}"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock FontSize="20" Text="{DynamicResource Country8}"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock FontSize="20" Text="{DynamicResource Country9}"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock FontSize="20" Text="{DynamicResource Country10}"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock FontSize="20" Text="{DynamicResource Country11}"></TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+            <Border  Grid.Row="6"  BorderThickness="1" BorderBrush="Black" Margin="240,19,280,20"></Border>
+
+            <Button Grid.Row="7" Margin="241,10,280,25" Height="Auto" FontSize="20" Content="{DynamicResource Save}" Command="{Binding GoToSaveChanges }"></Button>
+        </Grid>
+        <Grid Grid.Column="1"  Style="{DynamicResource Grids}" Margin="0,0,0,848">
+
+        </Grid>
+    </Grid>
+</UserControl>

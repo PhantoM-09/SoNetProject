@@ -1,0 +1,72 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="MyPage">Моя страница</system:String>
+    <system:String x:Key="Friend">Друзья</system:String>
+    <system:String x:Key="Message">Сообщения</system:String>
+    <system:String x:Key="Files">Файлы</system:String>
+    <system:String x:Key="FriendFiles">Файлы друга</system:String>
+    <system:String x:Key="Search">Поиск</system:String>
+    <system:String x:Key="Exit">Выход</system:String>
+
+    <system:String x:Key="Add">Добавить</system:String>
+    <system:String x:Key="Subscrubers">Подписчики</system:String>
+    <system:String x:Key="FriendFriends">Друзья друга</system:String>
+    <system:String x:Key="FriendSubscrubers">Подписчики друга</system:String>
+    
+    <system:String x:Key="Contacts">Контакты</system:String>
+
+    <system:String x:Key="LastName">Фамилия:</system:String>
+    <system:String x:Key="Name">Имя:</system:String>
+    <system:String x:Key="Sex">Пол:</system:String>
+    <system:String x:Key="BirthDay">Дата рождения:</system:String>
+    <system:String x:Key="Country">Страна:</system:String>
+    <system:String x:Key="Edit">Редактировать</system:String>
+
+    <system:String x:Key="AddIntoFiles">Добавить в Файлы</system:String>
+
+    <system:String x:Key="Back">Назад</system:String>
+    <system:String x:Key="AddPost">Добавление записи</system:String>
+    <system:String x:Key="ChoiceImage">Выбрать картинку</system:String>
+    <system:String x:Key="Save">Принять</system:String>
+    <system:String x:Key="EnterText">Введите текст</system:String>
+
+    <system:String x:Key="CommentPost">Комментирование записи</system:String>
+    <system:String x:Key="EnterComment">Введите комментарий</system:String>
+    <system:String x:Key="Send">Отправить</system:String>
+
+    <system:String x:Key="DeletePost">Удаление записи</system:String>
+    <system:String x:Key="QuestionDeletePost">Хотите удалить запись?</system:String>
+    <system:String x:Key="Yes">Да</system:String>
+    <system:String x:Key="No">Нет</system:String>
+
+    <system:String x:Key="QuestionExit">Хотите выйти?</system:String>
+
+    <system:String x:Key="SearchResults">Результаты поиска</system:String>
+    <system:String x:Key="FindPeople">Найдено человек:</system:String>
+    
+    <system:String x:Key="EnterMessage">Введите сообщение</system:String>
+
+    <system:String x:Key="EditProfile">Редактирование профиля</system:String>
+    <system:String x:Key="AppSettings">Настройки приложения</system:String>
+    <system:String x:Key="LanguageChange">Смена языка</system:String>
+    <system:String x:Key="ThemeChange">Смена темы</system:String>
+    <system:String x:Key= "Russian">Русский</system:String>
+    <system:String x:Key="English">Английский</system:String>
+    <system:String x:Key= "Male">Мужской</system:String>
+    <system:String x:Key="Female">Женский</system:String>
+    <system:String x:Key="Country1">Азербайджан</system:String>
+    <system:String x:Key="Country2">Армения</system:String>
+    <system:String x:Key="Country3">Беларусь</system:String>
+    <system:String x:Key="Country4">Казахстан</system:String>
+    <system:String x:Key="Country5">Кыргызская республика</system:String>
+    <system:String x:Key="Country6">Республика Молдова</system:String>
+    <system:String x:Key="Country7">Республика Таджикистан</system:String>
+    <system:String x:Key="Country8">Республика Узбекистан</system:String>
+    <system:String x:Key="Country9">Россия</system:String>
+    <system:String x:Key="Country10">Туркменистан</system:String>
+    <system:String x:Key="Country11">Украина</system:String>
+
+    <system:String x:Key="DataBase">База данных</system:String>
+    <system:String x:Key="Choice">Выберите почту</system:String>
+</ResourceDictionary>

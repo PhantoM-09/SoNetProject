@@ -1,0 +1,102 @@
+﻿<UserControl x:Class="curs.View.LoginRegistrationView.RegistrationEndView"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            xmlns:tool="http://schemas.xceed.com/wpf/xaml/toolkit"
+            xmlns:local="clr-namespace:curs"
+            xmlns:vm="clr-namespace:curs.ViewModels.LoginRegistration"
+            mc:Ignorable="d" 
+            d:DesignHeight="886" d:DesignWidth="908">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="210,5,210,10">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="280*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="Символьный.png"  Grid.Row="0" Margin="0,50"></Image>
+                <Grid  Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Margin="50,12,50,0" FontSize="20" Foreground="#FF767676" Grid.Row="0">Пол</TextBlock>
+
+                    <ComboBox Height="45"  Grid.Row="1" Margin="50,0,50,0" IsReadOnly="True" FontSize="20" Background="White" BorderBrush="Black" BorderThickness="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="{Binding Sex, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}">
+                        <ComboBoxItem>
+                            <TextBlock FontSize="20">Мужской</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock FontSize="20">Женский</TextBlock>
+                        </ComboBoxItem>
+                    </ComboBox>
+                </Grid>
+                <Grid  Grid.Row="1" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Margin="50,18,50,0" FontSize="20" Foreground="#FF767676" Grid.Row="0">Дата рождения</TextBlock>
+                    <TextBox  Grid.Row="1" FontSize="20" BorderThickness="1" BorderBrush="Black" Margin="49,6,49,5" Text="{Binding BirthDay, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}">
+                    </TextBox>
+                    
+                </Grid>
+
+
+                <Grid  Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Margin="50,12,50,0" FontSize="20" Foreground="#FF767676" Grid.Row="0">Страна</TextBlock>
+
+                    <ComboBox Height="45" IsReadOnly="True" Grid.Row="1" Margin="50,0,50,0" FontSize="20" Background="White" BorderBrush="Black" BorderThickness="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text ="{Binding Country, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}">
+                        <ComboBoxItem IsSelected="True">
+                            <TextBlock FontSize="20">Азербайджан</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem >
+                            <TextBlock FontSize="20">Армения</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem >
+                            <TextBlock FontSize="20">Беларусь</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem >
+                            <TextBlock FontSize="20">Казахстан</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem >
+                            <TextBlock FontSize="20">Кыргызская республика</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem >
+                            <TextBlock FontSize="20">Республика Молдова</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock FontSize="20">Республика Таджикистан</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock FontSize="20">Республика Узбекистан</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock FontSize="20">Россия</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock FontSize="20">Туркменистан</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock FontSize="20">Украина</TextBlock>
+                        </ComboBoxItem>
+                    </ComboBox>
+                </Grid>
+
+
+                <Button Grid.Row="4" Margin="50,50,50,5"  FontSize="20" Height="Auto" Command="{Binding GoToPickImage}">Далее</Button>
+                <Button Grid.Row="5" Margin="50,10,50,45"  FontSize="20" Height="Auto" Command="{Binding GoToLogin}">Войти</Button>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

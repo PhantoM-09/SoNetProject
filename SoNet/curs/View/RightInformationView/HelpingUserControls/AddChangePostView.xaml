@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="curs.View.RightInformationView.HelpingUserControls.AddChangePostView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:curs.View.RightInformationView.HelpingUserControls"
+             xmlns:tool="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+              d:DesignHeight="990" d:DesignWidth="1600">
+    <UserControl.Resources>
+        <ResourceDictionary Source="/curs;component/View/Themes/Standard.xaml"></ResourceDictionary>
+    </UserControl.Resources>
+    <Grid  x:Name="MainGrid">
+        <Grid>
+            <Grid.Resources>
+                <ResourceDictionary Source="/curs;component/View/Languages/Russian.xaml"></ResourceDictionary>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="791*"/>
+                <RowDefinition Height="119*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Style="{DynamicResource Grids}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="146*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="1453*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Menu Grid.Column="0" >
+                    <MenuItem Width="146" Height="80" FontSize="40"   Command="{Binding GoToProfile}" >
+                        <MenuItem.Header >
+                            <TextBlock Margin="2,0,-151,0" Height="46" Foreground="White" Text="{DynamicResource Back}"></TextBlock>
+                        </MenuItem.Header>
+                    </MenuItem>
+                </Menu>
+
+                <Border Grid.Column="1" BorderBrush="White" BorderThickness="1" Margin="0,5,0,5"></Border>
+                <TextBlock Grid.Column="2" FontSize="40" Margin="10,10,10,10" Foreground="White" Text="{DynamicResource Edit}"></TextBlock>
+            </Grid>
+
+            <Grid Grid.Row="1" Margin="10,0,10,0">
+                
+                    <Grid >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                    <Border Grid.Column="0" BorderBrush="Black" BorderThickness="2" Margin="0,10,0,0"></Border>
+                    <TextBox TextWrapping="Wrap" Grid.Column="0" Margin="10,20,10,21" FontSize="30" MaxLength="800" materialDesign:HintAssist.Hint="{DynamicResource EnterText}" Text="{Binding  NewTextPost, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"></TextBox>
+
+                    <Grid Grid.Column="1"  Background="#FFF1F1F1" Margin="10,10,10,0">
+                        <TextBlock Margin="10,10,10,0" FontSize="30" TextWrapping="Wrap" Text="{Binding OldTextPost, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                        </Grid>
+                    </Grid>
+            </Grid>
+
+            <Button Grid.Row="2" Margin="328,10,800,50" Height="Auto" FontSize="20" Content="{DynamicResource Save}" Command="{Binding SaveComment}"></Button>
+        </Grid>
+    </Grid>
+</UserControl>
